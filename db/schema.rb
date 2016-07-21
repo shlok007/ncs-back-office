@@ -46,10 +46,10 @@ ActiveRecord::Schema.define(version: 20160717061418) do
     t.string   "name"
     t.string   "email"
     t.integer  "year"
-    t.integer  "contact_no"
+    t.integer  "contact_no",   limit: 10
     t.string   "admission_no"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "users", force: :cascade do |t|
