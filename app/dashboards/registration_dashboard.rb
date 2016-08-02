@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class EventDashboard < Administrate::BaseDashboard
+class RegistrationDashboard < Administrate::BaseDashboard
     # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -9,14 +9,8 @@ class EventDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
-    name: Field::String,
-    start_time: Field::DateTime,
-    end_time: Field::DateTime,
-    display_start_time: Field::DateTime,
-    display_end_time: Field::DateTime,
-    description: Field::Text,
-    contact_info: Field::String,
-    venue: Field::Text,
+    event_id: Field::Number,
+    student_id: Field::Number,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -25,9 +19,8 @@ class EventDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :name,
-    :start_time,
-    :end_time,
+    :event_id,
+    :student_id,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -38,10 +31,7 @@ class EventDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :name,
-    :start_time,
-    :end_time,
-    :display_start_time,
-    :display_end_time,
+    :student_id,
+    :event_id,
   ]
 end

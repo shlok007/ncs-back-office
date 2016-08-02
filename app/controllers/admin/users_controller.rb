@@ -35,6 +35,7 @@ module Admin
     end
 
     def index
+      super
       if !current_user.has_role? :admin
         redirect_to admin_events_path, alert: "Not authorised to perform this action"
       end
