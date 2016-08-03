@@ -8,6 +8,7 @@ module Admin
     #   @resources = User.all.paginate(10, params[:page])
     # end
     def create
+      resource = resource_class.new(resource_params)
       if resource.save
         if resource_params[:year] == "1"
         elsif resource_params[:year] == "2"
