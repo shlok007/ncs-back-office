@@ -29,7 +29,7 @@ gem 'administrate', github: 'greetpoint/administrate', branch: 'rails5'
 gem 'bourbon', '~> 5.0.0.beta.5' 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'DummyText'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

@@ -9,6 +9,7 @@ module Admin
     before_action :authenticate_admin
 
     def authenticate_admin
+      authenticate_user!
       # TODO Add authentication logic here.
     end
 
