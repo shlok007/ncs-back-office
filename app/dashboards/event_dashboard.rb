@@ -17,6 +17,7 @@ class EventDashboard < Administrate::BaseDashboard
     description: Field::Text,
     contact_info: Field::String,
     venue: Field::Text,
+    poster: PaperclipField,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -43,5 +44,6 @@ class EventDashboard < Administrate::BaseDashboard
     :end_time,
     :display_start_time,
     :display_end_time,
+    :poster,
   ]
 end

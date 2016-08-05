@@ -19,6 +19,7 @@ class UserDashboard < Administrate::BaseDashboard
     contact_no: Field::Number,
     password: Field::String,
     password_confirmation: Field::String,
+    profile_pic: PaperclipField,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -43,6 +44,7 @@ class UserDashboard < Administrate::BaseDashboard
     :github,
     :admission_no,
     :contact_no,
+    :profile_pic,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -59,6 +61,7 @@ class UserDashboard < Administrate::BaseDashboard
     :contact_no,
     :password,
     :password_confirmation,
+    :profile_pic,
   ].freeze
 
   # Overwrite this method to customize how users are displayed
